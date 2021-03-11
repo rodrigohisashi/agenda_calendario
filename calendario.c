@@ -4,6 +4,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+#include <locale.h>
+
 
 void menu();
 void menuMarca();
@@ -25,6 +27,7 @@ struct info criaInfo();
 
 int main() {
   existeArquivo();
+	setlocale(LC_ALL,"Portuguese");
 	menu();
 	return 0;
 }
